@@ -1,0 +1,164 @@
+    body {
+        height: 100%!important;
+        background-color: #edeafb;
+        min-height: 900px;
+        min-width: 1054px;
+    }
+    
+    .container {
+        background-color: #fafbfd;
+        height: 850px;
+        width: 1054px;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .usv-logo-container {
+        width: 100%;
+        background-color: #edeafb;
+        height: 40px;
+        position: relative;
+    }
+    
+    .usv-logo-container img {
+        border-radius: 20px;
+        width: 200px;
+        position: absolute;
+        left: -20px;
+        z-index: 4;
+    }
+    
+    .user-info {
+        background-color: white;
+        width: 100%;
+        height: 400px;
+        margin-top: 100px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .half-circle {
+        z-index: 4;
+        background-color: #7562e0;
+        position: absolute;
+        right: -179px;
+        bottom: -120px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+    }
+    
+    .content .text-area {
+        width: 50%;
+        margin-top: 80px;
+    }
+    
+    .content img {
+        z-index: 4;
+        margin-left: 70px;
+        margin-top: 20px;
+        animation: rotation 6s infinite linear;
+    }
+    
+    @keyframes rotation {
+        50% {
+            transform: rotate(2deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .splitter {
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        z-index: 3;
+        background-color: #fafbfd;
+        top: 0;
+    }
+    
+    .content .text {
+        width: 80%;
+        margin-top: 15px;
+        margin-left: 120px;
+        height: 100px;
+        color: #120845;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        text-align: left;
+        line-height: 1.4;
+        margin: 0;
+    }
+    
+    button {
+        margin-top: 10px;
+        font-size: 18px;
+        background-color: #7562e0;
+        padding: 15px;
+        color: white;
+        border: none;
+    }
+    
+    .social-media {
+        width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .social-media img {
+        width: 90px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .square {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+    
+    .skills-container {
+        width: 750px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: white;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .square img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        transition: all .2s ease-in-out;
+    }
+    
+    .square img:hover {
+        transform: scale(1.1);
+    }
+    
+    #skills {
+        margin-top: 5px;
+        text-align: center;
+        color: #120845;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
